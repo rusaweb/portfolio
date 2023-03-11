@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_project_details_project_details",
+  "info": {
+    "displayName": "Project Details"
+  },
+  "options": {},
+  "attributes": {
+    "role": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "tools": {
+      "type": "string"
+    }
+  }
+}

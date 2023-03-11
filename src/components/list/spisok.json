@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_list_spisok",
+  "info": {
+    "displayName": "Список"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "string"
+    }
+  }
+}
