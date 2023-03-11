@@ -113,3 +113,9 @@ exports
 dist
 build
 .strapi-updater.json
+
+############################
+# Firebase
+############################
+
+config/portfolio-d7a1f-firebase-adminsdk-k2owt-7a489f3f17.json
