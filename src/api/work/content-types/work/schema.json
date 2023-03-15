@@ -106,7 +106,7 @@
       "repeatable": false,
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
       "component": "project-details.project-details"
