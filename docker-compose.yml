@@ -21,11 +21,11 @@ services:
     image: nginx:1.15-alpine
     ports:
       - "80:80"
-      - "1337:1337"
+      - "443:443"
     volumes:
       - ./data/nginx:/etc/nginx/conf.d
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
-    
+
   certbot:
     image: certbot/certbot
     volumes:
