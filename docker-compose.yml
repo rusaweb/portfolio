@@ -19,7 +19,8 @@ services:
       - DATABASE_PASSWORD=admin12345678
       - DATABASE_PORT=5432
       - STORAGE_BUCKET_URL=portfolio-d7a1f.appspot.com
-
+    networks:
+      - net
   nginx:
     image: nginx:1.15-alpine
     ports:
@@ -30,6 +31,8 @@ services:
       - ./data/certbot/conf:/etc/letsencrypt
       - ./data/certbot/www:/var/www/certbot
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+    networks:
+      - net
 
   certbot:
     image: certbot/certbot
@@ -37,3 +40,8 @@ services:
       - ./data/certbot/conf:/etc/letsencrypt
       - ./data/certbot/www:/var/www/certbot
     entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+    networks:
+      - net
+
+networks:
+  net:
