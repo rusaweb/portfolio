@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_list_educations",
+  "info": {
+    "displayName": "Educations"
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    }
+  }
+}
