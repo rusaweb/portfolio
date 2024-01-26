@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@_sh/strapi-plugin-ckeditor": "^2.0.4",
-    "@strapi/plugin-color-picker": "^4.7.1",
-    "@strapi/plugin-i18n": "4.7.1",
-    "@strapi/plugin-users-permissions": "4.7.1",
-    "@strapi/strapi": "4.7.1",
+    "@strapi/plugin-color-picker": "^4.19.0",
+    "@strapi/plugin-i18n": "4.19.0",
+    "@strapi/plugin-users-permissions": "4.19.0",
+    "@strapi/strapi": "4.19.0",
     "better-sqlite3": "8.0.1",
     "pg": "^8.10.0",
     "strapi-provider-firebase-storage": "^1.0.3"
@@ -24,10 +24,6 @@
   },
   "strapi": {
     "uuid": "c4bb12bb-bdde-4713-ab4a-ef1fb53c69d4"
-  },
-  "engines": {
-    "node": ">=14.19.1 <=18.x.x",
-    "npm": ">=6.0.0"
   },
   "license": "MIT"
 }
